@@ -1,0 +1,242 @@
+PRGame:
+    machineType: custom
+    numBalls: 5
+
+PRFlippers:
+    - flipperL
+    - flipperR
+
+PRBumpers:
+    - popB
+    - popR
+    - popL
+
+PRSwitches:
+    rollover0:
+        number: 1/3
+    rollover1:
+        number: 0/3
+    rollover2:
+        number: 5/3
+    rollover3:
+        number: 7/3
+    shooterlane:
+        number: 4/2
+
+    watergate:
+        number: 2/2
+
+    standupUpL:
+        number: 6/2
+    standupUpR:
+        number: 4/3
+
+    popL:
+        number: 7/1
+    popR:
+        number: 5/1
+    popB:
+        number: 0/1
+
+    spinner:
+        number: 4/0
+
+    standupLwL:
+        number: 3/3
+    standupLwR:
+        number: 2/3
+
+    slingL:
+        number: 1/1
+    slingR:
+        number: 3/1
+
+    outlaneL:
+        number: 6/1
+    returnlane:
+        number: 6/3
+    outlaneR:
+        number: 4/1
+
+    drain:
+        number: 7/2
+
+    flipperL:
+        number: SD0
+    flipperR:
+        number: SD1
+    test:
+        number: SD2
+    tilt:
+        number: SD3
+    start:
+        number: SD4
+
+PRCoils:
+    ballserve:
+        number: A0-B0-0
+    slingR:
+        number: A0-B0-1
+    slingL:
+        number: A0-B0-2
+    popR:
+        number: A0-B0-3
+    popB:
+        number: A0-B0-4
+    popL:
+        number: A0-B0-5
+    kickback:
+        number: A0-B0-6
+
+    flipperRMain:
+        number: A0-B1-0
+    flipperRHold:
+        number: A0-B1-0
+
+    flipperLMain:
+        number: A0-B1-1
+    flipperLHold:
+        number: A0-B1-1
+
+PRLamps:
+    tree00:
+        number: Source-A1-B0-0:Sink-A1-B1-0
+    tree10:
+        number: Source-A1-B0-1:Sink-A1-B1-0
+    tree20:
+        number: Source-A1-B0-2:Sink-A1-B1-0
+    tree21:
+        number: Source-A1-B0-3:Sink-A1-B1-0
+    tree32:
+        number: Source-A1-B0-4:Sink-A1-B1-0
+    tree31:
+        number: Source-A1-B0-5:Sink-A1-B1-0
+    tree30:
+        number: Source-A1-B0-6:Sink-A1-B1-0
+    tree40:
+        number: Source-A1-B0-7:Sink-A1-B1-0
+
+    tree41:
+        number: Source-A1-B0-0:Sink-A1-B1-1
+    tree42:
+        number: Source-A1-B0-1:Sink-A1-B1-1
+    tree43:
+        number: Source-A1-B0-2:Sink-A1-B1-1
+    tree54:
+        number: Source-A1-B0-3:Sink-A1-B1-1
+    tree53:
+        number: Source-A1-B0-4:Sink-A1-B1-1
+    tree52:
+        number: Source-A1-B0-5:Sink-A1-B1-1
+    tree51:
+        number: Source-A1-B0-6:Sink-A1-B1-1
+    tree50:
+        number: Source-A1-B0-7:Sink-A1-B1-1
+
+    superbonus:
+        number: Source-A1-B0-0:Sink-A1-B1-2
+    multiplier0:
+        number: Source-A1-B0-1:Sink-A1-B1-2
+    multiplier1:
+        number: Source-A1-B0-2:Sink-A1-B1-2
+    multiplier2:
+        number: Source-A1-B0-3:Sink-A1-B1-2
+    standupLwR1:
+        number: Source-A1-B0-4:Sink-A1-B1-2
+    popR:
+        number: Source-A1-B0-5:Sink-A1-B1-2
+    popL:
+        number: Source-A1-B0-6:Sink-A1-B1-2
+    popB:
+        number: Source-A1-B0-7:Sink-A1-B1-2
+
+    GIslingL0:
+        number: Source-A1-B0-0:Sink-A1-B1-3
+    GIslingL1:
+        number: Source-A1-B0-1:Sink-A1-B1-3
+    GIstandupLwL:
+        number: Source-A1-B0-2:Sink-A1-B1-3
+    GIspinner0:
+        number: Source-A1-B0-3:Sink-A1-B1-3
+    GIspinner1:
+        number: Source-A1-B0-4:Sink-A1-B1-3
+    GIrollover0:
+        number: Source-A1-B0-5:Sink-A1-B1-3
+    GIUpL1:
+        number: Source-A1-B0-6:Sink-A1-B1-3
+    GIUpL0:
+        number: Source-A1-B0-7:Sink-A1-B1-3
+
+    outlaneL:
+        number: Source-A1-B0-0:Sink-A1-B1-4
+    rollover4:
+        number: Source-A1-B0-1:Sink-A1-B1-4
+    spinner:
+        number: Source-A1-B0-2:Sink-A1-B1-4
+    GIstandupUpL:
+        number: Source-A1-B0-3:Sink-A1-B1-4
+    rollover0:
+        number: Source-A1-B0-4:Sink-A1-B1-4
+    rollover1:
+        number: Source-A1-B0-5:Sink-A1-B1-4
+    rollover2:
+        number: Source-A1-B0-6:Sink-A1-B1-4
+    rollover3:
+        number: Source-A1-B0-7:Sink-A1-B1-4
+
+    standupUpR:
+        number: Source-A1-B0-0:Sink-A1-B1-5
+    trunk5:
+        number: Source-A1-B0-1:Sink-A1-B1-5
+    trunk4:
+        number: Source-A1-B0-2:Sink-A1-B1-5
+    trunk3:
+        number: Source-A1-B0-3:Sink-A1-B1-5
+    trunk2:
+        number: Source-A1-B0-4:Sink-A1-B1-5
+    trunk1:
+        number: Source-A1-B0-5:Sink-A1-B1-5
+    trunk0:
+        number: Source-A1-B0-6:Sink-A1-B1-5
+    standupLwR0:
+        number: Source-A1-B0-7:Sink-A1-B1-5
+
+    GIrollover1:
+        number: Source-A1-B0-0:Sink-A1-B1-6
+    GIrollover2:
+        number: Source-A1-B0-1:Sink-A1-B1-6
+    GIrollover3:
+        number: Source-A1-B0-2:Sink-A1-B1-6
+    GIrollover4:
+        number: Source-A1-B0-3:Sink-A1-B1-6
+    GIwall:
+        number: Source-A1-B0-4:Sink-A1-B1-6
+
+#    unused0:
+#        number: Source-A1-B0-5:Sink-A1-B1-6
+#    unused1:
+#        number: Source-A1-B0-6:Sink-A1-B1-6
+#    unused2:
+#        number: Source-A1-B0-7:Sink-A1-B1-6
+
+    GIslingR0:
+        number: Source-A1-B0-0:Sink-A1-B1-7
+    GIslingR1:
+        number: Source-A1-B0-1:Sink-A1-B1-7
+    GIstandupLwR0:
+        number: Source-A1-B0-2:Sink-A1-B1-7
+    GIstandupLwR1:
+        number: Source-A1-B0-3:Sink-A1-B1-7
+    GIstandupUpR:
+        number: Source-A1-B0-4:Sink-A1-B1-7
+    star:
+        number: Source-A1-B0-5:Sink-A1-B1-7
+    GIUpR0:
+        number: Source-A1-B0-6:Sink-A1-B1-7
+    GIUpR1:
+        number: Source-A1-B0-7:Sink-A1-B1-7
+
+PRDriverGlobals:
+    lamp_matrix_strobe_time: 1000
+    use_watchdog: True
+    watchdog_time: 1000

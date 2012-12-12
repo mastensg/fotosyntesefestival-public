@@ -1,0 +1,52 @@
+This is the software for the "Fotosyntese Festival" pinball machine. It
+consists of two programs: "game" and "videomode". This release does not include
+lamp shows, graphics, music or sound effects. It is provided purely in the hope
+that you may learn from the code.
+
+This source code is released under the ISC licence, so that you can use parts
+of this package that you find useful, without forcing you to release your
+derived source code to the public. See LICENCE for details.
+
+If you have any questions, or want to know more about this machine, see the
+thread at the PinballControllers.com forum:
+
+http://www.pinballcontrollers.com/forum/index.php?topic=659.0
+
+game
+----
+
+The "game" directory contains a Python program that controls most of the
+pinball machine's features:
+
+game.py contains the game logic.
+
+midi.py is a lamp show MIDI sequencer.
+
+net.py is a module for communicating with the "videomode" program.
+
+export_tracks.py and import_tracks.py are for converting between human-editable
+text files, and the format that midi.py uses.
+
+videomode
+---------
+
+The "videomode" directory contains a C program that renders the animations.
+There are two main files, vc_main.c and x11_main.c. Autoconf should detect
+whether you are running on a Raspberry Pi. If it finds bcm_host.h, it assumes
+you are, and selects vc_main.c, otherwise, it assumes you're running Linux with
+X11 and GLX, and selects x11_main.c.
+
+To compile:
+
+    $ autoreconf -f -i
+    $ ./configure
+    $ make
+
+
+There is also a script, mkanims.py, which converts the (missing) PNG files into
+".vma" animation files.
+
+The machine was made by:
+Tormod Pettersen: Project lead, sound, mechanics 
+Martin Stensgård: Programming, electronics
+Zoltán Sághy: Graphics, animations
